@@ -18,6 +18,7 @@ message Answer{
 
 service HelloSayer{
 
+    //Med rpc syftar man på metoder som finns tillgängliga på server-sidan, som anropas remotely från klienter.
     rpc sayHello(Input) returns (Answer);
 
 }
