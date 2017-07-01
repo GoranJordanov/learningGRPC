@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+//Detta är för att man inte ska få allt i en enda, fet klass.
+//Enklare att se vad som genereras.
+option java_multiple_files = true;
+
+message Input{
+
+    string message = 1;
+
+}
+
+message Answer{
+
+    string answer = 1;
+
+}
+
+service HelloSayer{
+
+    rpc sayHello(Input) returns (Answer);
+
+}
